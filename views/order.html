@@ -13,18 +13,26 @@
           </div>
           <div class="card-body">
             <div class="mb-3">
-              <label for="customer-select" class="form-label">Select Customer</label>
+              <label for="customer-select" class="form-label"
+                >Select Customer</label
+              >
               <select class="form-select" id="customer-select">
                 <option value="">Select Customer</option>
               </select>
             </div>
             <div class="mb-3">
               <label class="form-label">Address</label>
-              <p id="customer-address" class="form-control-plaintext border-bottom"></p>
+              <p
+                id="customer-address"
+                class="form-control-plaintext border-bottom"
+              ></p>
             </div>
             <div class="mb-3">
               <label class="form-label">Contact</label>
-              <p id="customer-contact" class="form-control-plaintext border-bottom"></p>
+              <p
+                id="customer-contact"
+                class="form-control-plaintext border-bottom"
+              ></p>
             </div>
           </div>
         </div>
@@ -42,9 +50,11 @@
             </div>
             <div class="mb-3">
               <label for="item-qty" class="form-label">Quantity</label>
-              <input type="number" class="form-control" id="item-qty" min="1">
+              <input type="number" class="form-control" id="item-qty" min="1" />
             </div>
-            <button type="button" class="btn btn-primary" id="add-to-cart">Add to Cart</button>
+            <button type="button" class="btn btn-primary" id="add-to-cart">
+              Add to Cart
+            </button>
           </div>
         </div>
       </div>
@@ -69,15 +79,29 @@
                 <tbody id="cart-tbody"></tbody>
                 <tfoot class="table-group-divider">
                   <tr>
-                    <td colspan="3" class="text-end"><strong>Total:</strong></td>
+                    <td colspan="3" class="text-end">
+                      <strong>Total:</strong>
+                    </td>
                     <td colspan="2"><strong id="order-total">0.00</strong></td>
                   </tr>
                 </tfoot>
               </table>
             </div>
             <div class="d-flex justify-content-between mt-3">
-              <button type="button" class="btn btn-danger" id="clear-cart">Clear Cart</button>
-              <button type="button" class="btn btn-success" id="place-order">Place Order</button>
+              <button
+                type="button"
+                class="btn btn-outline-danger"
+                id="clear-cart"
+              >
+                <i class="fas fa-trash-alt me-2"></i>Clear Cart
+              </button>
+              <button
+                type="button"
+                class="btn btn-primary btn-lg px-4"
+                id="place-order"
+              >
+                <i class="fas fa-shopping-cart me-2"></i>Place Order
+              </button>
             </div>
           </div>
         </div>
